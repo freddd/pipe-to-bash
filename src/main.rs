@@ -10,12 +10,12 @@ use hyper_util::rt::TokioIo;
 use tokio::net::TcpListener;
 
 const MALICIOUS_PAYLOAD: &str = r#"
-#!/bin/bash
+#!/bin/sh
 
 echo "Execute all the things, install malware, exfiltrate secrets, etc""#;
 
 const NON_MALICIOUS_PAYLOAD: &str = r#"
-#!/bin/bash
+#!/bin/sh
 
 echo "Fake install script, shown if you are not using wget/curl""#;
 
